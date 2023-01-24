@@ -1,0 +1,1797 @@
+@font-face {
+    font-family: 'Cantarell';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/cantarell-v17-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/cantarell-v17-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+@font-face {
+    font-family: 'Cantarell';
+    font-style: italic;
+    font-weight: 500;
+    src: local(''),
+         url('../fonts/cantarell-v17-latin-italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/cantarell-v17-latin-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+ @font-face {
+    font-family: 'Cantarell';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+         url('../fonts/cantarell-v17-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/cantarell-v17-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+    font-family: 'Cantarell';
+    font-style: italic;
+    font-weight: 700;
+    src: local(''),
+         url('../fonts/cantarell-v17-latin-700italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/cantarell-v17-latin-700italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+	font-family: 'Conv_Bogart-Bold-trial';
+	src: url('../fonts/Bogart-Bold-trial.eot');
+	src: local('☺'), url('../fonts/Bogart-Bold-trial.woff') format('woff'), url('fonts/Bogart-Bold-trial.ttf') format('truetype'), url('fonts/Bogart-Bold-trial.svg') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Conv_Bogart-Medium-trial';
+	src: url('../fonts/Bogart-Medium-trial.eot');
+	src: local('☺'), url('../fonts/Bogart-Medium-trial.woff') format('woff'), url('fonts/Bogart-Medium-trial.ttf') format('truetype'), url('fonts/Bogart-Medium-trial.svg') format('svg');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Conv_Bogart-Regular-trial';
+	src: url('../fonts/Bogart-Regular-trial.eot');
+	src: local('☺'), url('../fonts/Bogart-Regular-trial.woff') format('woff'), url('fonts/Bogart-Regular-trial.ttf') format('truetype'), url('fonts/Bogart-Regular-trial.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+html
+{
+    box-sizing:  border-box;
+}
+
+*, *::before, *::after
+{
+    box-sizing: inherit;
+}
+
+body
+{
+    right: 1920;
+    height: 1080;
+}
+
+.Header__Block
+{
+    display: block;
+    width: 100%;
+    height: 1062px;
+    background-image: url(../img/bg_header.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.Header__Block__Bg
+{
+    height: 169px;
+    background-color: rgba(3,14,39, 0.5);
+}
+
+.Header__Block__Bg__Content__One
+{
+    display: flex;
+}
+
+.Header__Block__Bg__Content__One__Logo
+{
+    margin-left: 7%;
+    margin-top: 30px;
+}
+
+.Header__Block__One__Sales
+{
+    margin-top: 30px;
+    margin-left: 9%;
+}
+
+.Header__Block__One__Sales__Txt
+{
+    font-family: 'Cantarell';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+    color: #FFFFFF;
+}
+
+.Header__Block__One__Sales__Phone
+{
+    margin-top: 5px;
+    font-family: 'Cantarell';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 31px;
+    color: #FFFFFF;
+}
+
+.Header__Block__One__Sales__Phone a
+{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.Header__Block__One__Support
+{
+    margin-top: 30px;
+    margin-left: 4%;
+}
+
+.Header__Block__One__Support__Txt
+{
+    font-family: 'Cantarell';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+    color: #FFFFFF;
+}
+
+.Header__Block__One__Support__Phone
+{
+    margin-top: 5px;
+    font-family: 'Cantarell';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 31px;
+    color: #FFFFFF;
+}
+
+.Header__Block__One__Support__Phone a
+{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.Header__Block__One__Email
+{
+    margin-left: 4%;
+    margin-top: 30px;
+}
+
+.Header__Block__One__Email__Txt
+{
+    font-family: 'Cantarell';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+    color: #FFFFFF;
+}
+
+.Header__Block__One__Email__Mail
+{
+    margin-top: 5px;
+    font-family: 'Cantarell';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 31px;
+    color: #FFFFFF;
+}
+
+.Header__Block__One__Email__Mail a
+{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.Header__Block__BTN__One
+{
+    margin-top: 40px;
+    margin-left: 10%;
+}
+
+.Header__Block__BTN__One__Bt
+{
+    width: 198px;
+    height: 46px;
+    background: #AFC7FA;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Cantarell';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #030E27;
+    opacity: 1 !important;
+}
+
+.Header__Block__BTN__One__Bt:hover
+{
+    background: #8FAFF7;
+    opacity: 1 !important;
+}
+
+.Header__Block__BTN__Two
+{
+    margin-top: 40px;
+    margin-left: 2%;
+}
+
+.Header__Block__BTN__Two__Bt
+{
+    width: 83px;
+    height: 46px;
+    background: #FFFFFF;
+    border: 1px solid #030E27;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Cantarell';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #030E27;
+    opacity: 1 !important;
+}
+
+.Header__Block__BTN__Two__Bt:hover
+{
+    background: #8FAFF7;
+    opacity: 1 !important;
+}
+
+.Header__Block__Info
+{
+    width: 50%;
+    height: 893px;
+    background: #F1F1F1;
+}
+
+.Header__Block__Info__Content
+{
+    margin-left: 14%;
+}
+
+.Header__Block__Info__Content__Txt__One
+{
+    padding-top: 361px;
+    width: 746px;
+    height: 114px;
+    font-family: 'Bogart Trial';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 57px;
+    color: #030E27;
+}
+
+.Header__Block__Info__Content__Txt__Two
+{
+    padding-top: 134px;
+    font-family: 'Cantarell';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 40px;
+    color: #030E27;
+}
+
+.Header__Block__Info__BTN
+{
+    display: flex;
+    margin-top: 40px;
+}
+
+.Header__Block__Info__BTN__One__Bt
+{
+    width: 252px;
+    height: 43px;
+    background: #AFC7FA;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Cantarell';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    color: #030E27;
+}
+
+.Header__Block__Info__BTN__One__Bt:hover
+{
+    background: #8FAFF7;
+}
+
+.Header__Block__Info__BTN__Two__Bt
+{
+    margin-left: 25%;
+    width: 101px;
+    height: 43px;
+    background: #FFFFFF;
+    border: 1px solid #030E27;
+    border-radius: 5px;
+    font-family: 'Cantarell';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    color: #030E27;
+}
+
+.Header__Block__Info__BTN__Two__Bt:hover
+{
+    background: #8FAFF7;
+}
+
+.Header__Block__Content__Two
+{
+    margin-top: 20px;
+    border-top-style: solid;
+    border-top-color: #FFFFFF;
+    border-width: 1px;
+    display: flex;
+}
+
+.LeftUP
+{
+    margin-left: 24%;
+}
+
+.LeftUPAll
+{
+    margin-left: 3.5%;
+}
+
+.Header__Block__Content__Two__Txt
+{
+    margin-top: 20px;
+    font-family: 'Cantarell';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    color: #FFFFFF;
+    opacity: 1 !important;
+    z-index: 5;
+}
+
+.Header__Block__Content__Two__Txt:hover
+{
+    cursor: pointer;
+    color: #8FAFF7;
+}
+
+.InfoContact
+{
+    margin-top: -100px;
+    background: #CFE1BD;
+    border-radius: 80px 80px 0px 0px;
+    width: 100%;
+    height: 100%;
+}
+.InfoContact__Txt__Block
+{
+    display: flex;
+}
+.InfoContact__Txt__Block__Text1
+{
+    font-family: 'Bogart Trial';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 58px;
+    line-height: 70px;
+    margin-top: 70px;
+    margin-left: 15%;
+    width: 660px;
+    height: 210px;
+}
+
+.InfoContact__Txt__Block__Text2
+{
+    font-family: 'Cantarell';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 31px;
+    margin-top: 70px;
+    margin-left: 9%;
+    width: 520px;
+    height: 196px;
+}
+
+.InfoContact__Forma
+{
+    position: relative;
+    z-index: 5;
+    display: flex;
+    margin: 50px auto;
+    width: 1360px;
+    height: 535px;
+    background: #F1F1F1;
+    border-radius: 60px;
+}
+
+.InfoContact__Forma__Txt
+{
+    padding-top: 70px;
+    width: 420px;
+    height: 132px;
+    color: #030E27;
+    margin-left: 10%;
+    font-family: 'Bogart Trial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 33px;
+}
+
+.InfoContact__Forma__Forms
+{
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+    width: 660px;
+    height: 395px;
+    border-left: 1px solid #030E27;
+}
+
+.Down
+{
+    margin-top: 0px !important;
+}
+
+.Inut_Forms
+{
+    font-family: 'Cantarell';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 31px;
+    border: none;
+    border-bottom-color: #030E27;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    margin-left: 5%;
+    margin-top: 53px;
+    background-color: #F1F1F1;
+}
+ 
+input.Inut_Forms::placeholder
+{
+    color: #030E27;
+}
+
+.InfoContact__Forma__Forms__B
+{
+    width: 100%;
+    display: flex;
+}
+
+.InfoContact__Forma__Forms__Txt
+{
+    width: 256px;
+    height: 20px;
+    margin-left: 5%;
+    margin-top: 82px;
+}
+
+.InfoContact__Forma__Forms__BTN
+{
+    width: 208px;
+    height: 43px;
+    margin-top: 70px;
+    margin-left: 78%;
+    background: #AFC7FA;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Cantarell';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    color: #030E27;
+}
+
+.InfoContact__Forma__Forms__BTN:hover
+{
+    background: #8FAFF7;
+}
+
+
+.Ready
+{
+    margin-top: -213px;
+    height: 1441px;
+    background: #F7F7F7;
+    border-radius: 80px 80px 0px 0px;
+}
+
+.Ready__Block__One
+{
+    display: block;
+}
+
+.Ready__Block__One__Header__Txt
+{
+    margin-left: 7%;
+    padding-top: 283px;
+    font-family: 'Bogart Trial';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 54px;
+    line-height: 54px;
+    color: #030E27;
+}
+
+.Ready__Block__One__Header__Info
+{
+    display: flex;
+    margin-left: 7%;
+    margin-top: 40px;
+}
+
+.BekUp
+{
+    margin-left: 0% !important;
+}
+
+.Ready__Block__One__Header__Info__OB
+{
+    width: 21%;
+    border-top-color: #030E27;
+    border-top-style: solid;
+    border-top-width: 1px;
+    margin-left: 4%;
+}
+
+.Ready__Block__One__Header__Info__OB__Txt
+{
+    height: 66px;
+    margin-top: 20px;
+    font-family: 'Bogart Trial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 33px;
+    color: #030E27;
+}
+
+.Ready__Block__One__Header__Info__OB__Img
+{
+    width: 380px;
+    height: 300px;
+    margin-top: 20px;
+}
+
+.Ready__Block__Two
+{
+    display: flex;
+    margin-left: 7%;
+    margin-top: 90px;
+}
+
+.Ready__Block__Two__Control
+{
+    display: block;
+    width: 40%;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-right-color: #030E27;
+}
+
+.Ready__Block__Two__Control__Txt
+{
+    width: 560px;
+    height: 108px;
+    font-family: 'Bogart Trial';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 54px;
+    line-height: 54px;
+    color: #030E27;
+}
+
+.Ready__Block__Two__Control__Arrows
+{
+    margin-top: 50px;
+    display: flex;
+    
+}
+
+.Ready__Block__Two__Control__Arrows__Left
+{
+    background: url(../img/arrowleft.png);
+    display: block;
+    width: 50px;
+    height: 50px;
+}
+
+.Ready__Block__Two__Control__Arrows__Left:hover
+{
+    cursor: pointer;
+    background: url(../img/arrowleft2.png);
+    display: block;
+    width: 50px;
+    height: 50px;
+}
+
+.Ready__Block__Two__Control__Arrows__Rigth
+{
+    margin-left: 3%;
+    background: url(../img/arrowright.png);
+    display: block;
+    width: 50px;
+    height: 50px;
+}
+
+.Ready__Block__Two__Control__Arrows__Rigth:hover
+{
+    cursor: pointer;
+    background: url(../img/arrowright2.png);
+    display: block;
+    width: 50px;
+    height: 50px;
+}
+
+.Ready__Block__Two__Control__Btn
+{
+    margin-top: 150px;
+    width: 193px;
+    height: 43px;
+    background: #AFC7FA;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Cantarell';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    color: #030E27;
+}
+
+.Ready__Block__Two__Control__Btn:hover
+{
+    background: #8FAFF7;
+}
+
+.Ready__Block__Two__InfooGrafica
+{
+    width: 50%;
+    margin-left: 2%;
+}
+
+.slide-Three
+{
+    width: 60%;
+}
+
+.inactiv
+{
+    display: none;
+}
+
+.Ready__Block__Two__InfooGrafica__Item
+{
+    width: 380px;
+    height: 416px;
+    background: #F1F1F1;
+    border: 1px solid #030E27;
+    border-radius: 10px;
+}
+
+.Ready__Block__Two__InfooGrafica__Item__Control
+{
+    display: flex;
+}
+
+.Ready__Block__Two__InfooGrafica__Item__Control__Txt
+{
+    width: 274px;
+    height: 72px;
+    font-family: 'Bogart Trial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 36px;
+    color: #030E27;
+    margin-left: 5%;
+    margin-top: 36px;
+}
+
+.Ready__Block__Two__InfooGrafica__Item__Control__Btn
+{
+    margin-top: 33px;
+    margin-left: 5%;
+    background: url(../img/plus-circle.png);
+    display: block;
+    width: 50px;
+    height: 50px;
+}
+
+.Ready__Block__Two__InfooGrafica__Item__Control__Btn:hover
+{
+    cursor: pointer;
+    background: url(../img/plus-circle2.png);
+    display: block;
+    width: 50px;
+    height: 50px;
+}
+
+.Ready__Block__Two__InfooGrafica__Item__Content
+{
+    width: 344px;
+    height: 247px;
+    margin: 49px auto auto auto;
+}
+
+.Ready__Block__Two__InfooGrafica__Item__Two
+{
+    width: 380px;
+    height: 416px;
+    background: #AFC7FA;
+    border: 1px solid #030E27;
+    border-radius: 10px;
+}
+
+.Ready__Block__Two__InfooGrafica__Item__Two__Control
+{
+    display: flex;
+}
+
+.Ready__Block__Two__InfooGrafica__Item__Two__Control__Txt
+{
+    width: 274px;
+    height: 72px;
+    font-family: 'Bogart Trial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 36px;
+    color: #030E27;
+    margin-left: 5%;
+    margin-top: 36px;
+}
+
+.Ready__Block__Two__InfooGrafica__Item__Two__Control__Btn
+{
+    margin-top: 33px;
+    margin-left: 5%;
+    background: url(../img/cross-circle.png);
+    display: block;
+    width: 50px;
+    height: 50px;
+}
+
+.Ready__Block__Two__InfooGrafica__Item__Two__Control__Btn:hover
+{
+    cursor: pointer;
+    background: url(../img/cross-circle2.png);
+    display: block;
+    width: 50px;
+    height: 50px;
+}
+
+.Ready__Block__Two__InfooGrafica__Item__Two__Content
+{
+    width: 344px;
+    height: 247px;
+    left: 18px;
+    top: 151px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    margin: 49px auto auto auto;
+}
+
+.Ready__Block__Two__InfooGrafica__Item__Two__Content p
+{
+    width: 324px;
+    height: 138px;
+    font-family: 'Cantarell';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    color: #030E27;
+    margin-left: 5%;
+    padding-top: 20px;
+}
+
+.Order
+{
+    display: flex;
+    width: 100%;
+    height: 672px;
+    margin: auto auto;
+    background-image: url(../img/Order_Bg.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.Order__Left__Block__Txt
+{
+    padding-top: 80px;
+    margin-left: 7%;
+    width: 520px;
+    height: 162px;
+    font-family: 'Bogart Trial';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 54px;
+    line-height: 54px;
+    color: #FFFFFF;
+}
+
+.Order__Right__Block
+{
+    width: 55%;
+    display: block;
+}
+
+.Order__Right__Block__Input
+{
+    width: 380px;
+    border: none;
+    background: none;
+    border-bottom-style: solid;
+    border-bottom-color: #FFFFFF;
+    border-bottom-width: 2px;
+    font-family: 'Cantarell';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 31px;
+}
+
+input.Order__Right__Block__Input::placeholder
+{
+    color: #FFFFFF;
+}
+
+.UpLifeInpute
+{
+    margin-left: 4%;
+}
+
+.Order__Right__Block__One
+{
+    margin-top: 80px;
+    margin-left: 20%;
+}
+
+.Order__Right__Block__One input
+{
+    color: #FFFFFF;
+}
+
+.Order__Right__Block__Two
+{
+    margin-top: 40px;
+    margin-left: 20%;
+}
+
+.Order__Right__Block__Two input
+{
+    color: #FFFFFF;
+}
+
+.Order__Right__Block__Three
+{
+    margin-top: 40px;
+    margin-left: 20%;
+}
+
+.Order__Right__Block__Three p
+{
+    font-family: 'Cantarell';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 31px;
+    color: #FFFFFF;
+}
+
+
+.Order__Right__Block__Three input
+{
+    font-family: 'Cantarell';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 31px;
+    width: 800px;
+    height: 170px;
+    background: none;
+    color: #FFFFFF;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+}
+
+.Order__Right__Block__Four
+{
+    margin-top: 50px;
+    margin-left: 20%;
+}
+
+.Order__Right__Block__Four__Btn
+{
+    width: 120px;
+    height: 43px;
+    background: #AFC7FA;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Cantarell';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    color: #030E27;
+}
+
+.Order__Right__Block__Four__Btn:hover
+{
+    background: #8FAFF7;
+}
+
+.TariffPlans
+{
+    margin-top: -70px;
+    display: flex;
+    flex-direction: row;
+    background: #CFE1BD;
+    border-radius: 80px 80px 0px 0px;
+}
+
+.TariffPlans__Block__Left
+{
+    padding-top: 70px;
+    margin-left: 8%;
+}
+
+.TariffPlans__Block__Left__TP
+{
+    width: 520px;
+    height: 54px;
+    font-family: 'Bogart Trial';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 54px;
+    line-height: 54px;
+    color: #030E27;
+}
+
+.TariffPlans__Block__Left__CV
+{
+    margin-top: 430px;
+    width: 520px;
+    height: 54px;
+    font-family: 'Bogart Trial';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 54px;
+    line-height: 54px;
+    color: #030E27;
+}
+
+.TariffPlans__Block__Left__SE
+{
+    margin-top: 298px;
+    width: 340px;
+    height: 70px;
+    font-family: 'Cantarell';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 40px;
+    color: #030E27;
+}
+
+.TariffPlans__Block__Left__BTN
+{
+    margin-top: 30px;
+    margin-bottom: 71px;
+    width: 219px;
+    height: 43px;
+    background: #AFC7FA;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Cantarell';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    color: #030E27;
+}
+
+.TariffPlans__Block__Left__BTN:hover
+{
+    background: #8FAFF7;
+}
+
+
+.TariffPlans__Block__Rigth__Plani
+{
+    margin-left: 5%;
+    margin-top: 70px;
+    display: block;
+}
+
+.FixUp
+{
+    margin-top: 70px !important;
+}
+
+.TariffPlans__Block__Rigth__Plani__Ob
+{
+    width: 938px;
+    margin-top: 90px;
+    display: flex;
+    border-bottom-style: solid;
+    border-bottom-color: #134238;
+    border-bottom-width: 2px;
+}
+
+.TariffPlans__Block__Rigth__Plani__Txt
+{
+    width: 378px;
+    height: 68px;
+    font-family: 'Bogart Trial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 62px;
+    line-height: 68px;
+    color: #134238;
+}
+
+.TariffPlans__Block__Rigth__Plani__Price
+{
+    margin: auto 40px;
+    width: 340px;
+    height: 44px;
+    font-family: 'Cantarell';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 50px;
+    color: #030E27;
+}
+
+.TariffPlans__Block__Rigth__Plani__b
+{
+    margin-left: 5%;
+}
+
+.TariffPlans__Block__Rigth__BTN
+{
+    width: 120px;
+    height: 43px;
+    background: #AFC7FA;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Cantarell';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    color: #030E27;
+}
+
+.TariffPlans__Block__Rigth__BTN:hover
+{
+    background: #8FAFF7;
+}
+
+
+.TariffPlans__Block__Whatisincluded
+{
+    width: 105%;
+    display: flex;
+    flex-direction: column;
+}
+
+.TariffPlans__Block__Whatisincluded__One
+{
+    margin-top: 70px;
+    margin-left: 5%;
+    display: flex;
+}
+
+.TariffPlans__Block__Whatisincluded__One span
+{
+    margin-left: 5%;
+    width: 390px;
+    height: 68px;
+    font-family: 'Cantarell';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 78px;
+    color: #134238;
+}
+
+.TariffPlans__Block__Whatisincluded__Two
+{
+    margin-top: 70px;
+    margin-left: 5%;
+    display: flex;
+}
+
+.TariffPlans__Block__Whatisincluded__Two span
+{
+    margin-left: 5%;
+    width: 390px;
+    height: 68px;
+    font-family: 'Cantarell';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 78px;
+    color: #134238;
+}
+
+.TariffPlans__Block__Whatisincluded__Obj
+{
+    width: 450px;
+    height: 233px;
+    border: 2px solid #134238;
+    border-radius: 10px;
+}
+
+.UpLife
+{
+    margin-left: 10%;
+}
+
+.TariffPlans__Block__Whatisincluded__Obj p
+{
+    margin-left: 7%;
+    width: 390px;
+    height: 105px;
+    font-family: 'Cantarell';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 40px;
+    color: #030E27;
+}
+
+.Advantages
+{
+    display: flex;
+}
+
+.Advantages__Images
+{
+    width: 1080px;
+    height: 770px;
+    background-image: url(../img/Advantages_bg.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.Advantages__Content
+{
+    width: 50%;
+    padding-left: 40px;
+    padding-top: 70px;
+    background: #FAF8F4;
+}
+
+.Advantages__Content__Title
+{
+    width: 660px;
+    height: 108px;
+    font-family: 'Bogart Trial';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 54px;
+    line-height: 54px;
+    color: #030E27;
+}
+
+.One
+{
+    margin-top: 40px !important;
+}
+
+.Advantages__Content__TXT
+{
+    display: flex;
+    width: 722px;
+    margin-top: 35px;
+}
+
+.Advantages__Content__TXT img
+{
+    width: 24px;
+    height: 24px;
+}
+
+.Advantages__Content__TXT span
+{
+    font-family: 'Cantarell';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 31px;
+    color: #030E27;
+    margin-left: 2%;
+}
+.Advantages__Content__BTN
+{
+    width: 248px;
+    height: 43px;
+    margin-top: 40px;
+    background: #AFC7FA;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Cantarell';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    color: #030E27;
+}
+
+.Advantages__Content__BTN:hover
+{
+    background: #8FAFF7;
+}
+
+.Reviews
+{
+    margin-top: 70px;
+    width: 100%;
+    margin-bottom: 70px;
+}
+
+.Reviews__Block__Header
+{
+    width: 85%;
+    margin-left: 7%;
+    font-family: 'Bogart Trial';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 54px;
+    line-height: 54px;
+    text-align: center;
+    color: #030E27;
+    margin: auto auto;
+}
+
+.Reviews__Control__Display
+{
+    display: flex;
+    width: 95%;
+    margin: auto auto;
+}
+
+.Carusel__Style
+{
+    width: 90%;
+}
+
+.Reviews__Control__Display__Left
+{
+    margin: auto auto;
+}
+
+.Reviews__Control__Display__Left:hover
+{
+    cursor: pointer;
+    transform: scale(1.2); /* Увеличиваем масштаб */
+}
+
+.Reviews__Control__Display__Right
+{
+    margin: auto auto;
+}
+
+.Reviews__Control__Display__Right:hover
+{
+    cursor: pointer;
+    transform: scale(1.2); /* Увеличиваем масштаб */
+}
+
+.item
+{
+    width: 100% !important;
+}
+
+.Reviews__Block__Carusel
+{
+    margin-top: 40px;
+    border-right-color: #030E27;
+    border-right-width: 1px;
+    border-right-style: solid;
+}
+
+.Reviews__Block__Carusel__Info
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.Reviews__Block__Carusel__Info__Img
+{
+    width: 70px;
+    height: 70px;
+}
+
+.Reviews__Block__Carusel__Info__FIO
+{
+    font-family: 'Cantarell';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    color: #030E27;
+    margin-left: 10%;
+}
+
+.Reviews__Block__Carusel__Info__Compani
+{
+    font-family: 'Cantarell';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 31px;
+    color: #8FAFF7;
+    margin-top: 15px;
+    margin-left: 10%;
+}
+
+.Reviews__Block__Carusel__Info__Txt
+{
+    width: 95%;
+    margin-top: 30px;
+    font-family: 'Cantarell';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    color: #030E27;
+}
+
+.Thetrust
+{
+    width: 100%;
+    height: 789px;
+    background: #DBDEFF;
+    border-radius: 100px 100px 0px 0px;
+}
+
+.Thetrust__Block__Header
+{
+    margin-left: 7%;
+    padding-top: 70px;
+    font-family: 'Bogart Trial';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 54px;
+    line-height: 54px;
+    color: #232864;
+}
+
+.Thetrust__Block__Header__Line
+{
+    height: 1px;
+    width: 92%;
+    border-bottom-style: solid;
+    border-bottom-color: #232864;
+    border-bottom-width: 2px;
+    margin-top: 40px;
+}
+
+.slide-two
+{
+    width: 87%;
+    margin-left: 7%;
+    display: flex;
+}
+
+.Carusel__Two__Img
+{
+    margin-top: 30px;
+    width: 380px !important;
+    height: 220px !important;
+}
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span
+{
+    background: #232864!important;
+}
+
+.ProfmanVet
+{
+    display: flex;
+    width: 100%;
+    height: 572px;
+    background: #FAF8F4;
+}
+
+.ProfmanVet__Left__Block__Txt
+{
+    margin-left: 7%;
+}
+
+.ProfmanVet__Left__Block__Txt__One
+{
+    margin-top: 70px;
+    width: 559px;
+    height: 96px;
+    font-family: 'Bogart Trial';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 32px;
+    color: #030E27;
+}
+
+.ProfmanVet__Left__Block__Txt__Two
+{
+    margin-top: 30px;
+    width: 560px;
+    height: 207px;
+    font-family: 'Cantarell';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    color: #030E27;
+}
+
+.ProfmanVet__Left__Block__Txt__Three
+{
+    margin-top: 50px;
+    width: 560px;
+    height: 56px;
+    font-family: 'Cantarell';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 32px;
+    color: #030E27;
+}
+
+.ProfmanVet__Right__Block
+{
+    width: 55%;
+    display: block;
+}
+
+.ProfmanVet__Right__Block__Input
+{
+    width: 380px;
+    border: none;
+    background: none;
+    border-bottom-style: solid;
+    border-bottom-color: #030E27;
+    border-bottom-width: 2px;
+    font-family: 'Cantarell';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 31px;
+}
+
+input.ProfmanVet__Right__Block__Input::placeholder
+{
+    color: #030E27;
+}
+
+.UpLifeInpute
+{
+    margin-left: 4%;
+}
+
+.ProfmanVet__Right__Block__One
+{
+    margin-top: 80px;
+    margin-left: 20%;
+}
+
+.ProfmanVet__Right__Block__Two
+{
+    margin-top: 40px;
+    margin-left: 20%;
+}
+
+.ProfmanVet__Right__Block__Three
+{
+    margin-top: 40px;
+    margin-left: 20%;
+}
+
+.ProfmanVet__Right__Block__Three p
+{
+    font-family: 'Cantarell';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 31px;
+    color: #030E27;
+}
+
+.ProfmanVet__Right__Block__Three__Input
+{
+    font-family: 'Cantarell';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 31px;
+    width: 800px;
+    height: 170px;
+    background: none;
+    border: 2px solid rgba(3,14,39, 0.5);
+    border-radius: 10px;
+    color: #030E27;
+}
+
+.ProfmanVet__Right__Block__Four
+{
+    margin-top: 50px;
+    margin-left: 20%;
+}
+
+.ProfmanVet__Right__Block__Four__Btn
+{
+    width: 248px;
+    height: 43px;
+    background: #AFC7FA;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Cantarell';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    color: #030E27;
+}
+
+.ProfmanVet__Right__Block__Four__Btn:hover
+{
+    background: #8FAFF7;
+}
+
+.Footer__Block
+{
+    width: 100%;
+    height: 224px;
+    background: #F1F1F1;
+}
+
+.Footer__Block__One
+{
+    padding-top: 50px;
+    display: flex;
+}
+
+.Footer__Block__One__Logo
+{
+    margin-left: 7%;
+}
+
+.Footer__Block__One__Sales
+{
+    margin-left: 14%;
+}
+
+.Footer__Block__One__Sales__Txt
+{
+    font-family: 'Cantarell';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    color: #030E27;
+}
+
+.Footer__Block__One__Sales__Phone
+{
+    margin-top: 10px;
+    font-family: 'Cantarell';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 31px;
+    color: #030E27;
+}
+
+.Footer__Block__One__Sales__Phone a
+{
+    text-decoration: none;
+    color: #030E27;
+}
+
+.Footer__Block__One__Support
+{
+    margin-left: 4%;
+}
+
+.Footer__Block__One__Support__Txt
+{
+    font-family: 'Cantarell';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    color: #030E27;
+}
+
+.Footer__Block__One__Support__Phone
+{
+    margin-top: 10px;
+    font-family: 'Cantarell';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 31px;
+    color: #030E27;
+}
+
+.Footer__Block__One__Support__Phone a
+{
+    text-decoration: none;
+    color: #030E27;
+}
+
+.Footer__Block__One__Email
+{
+    margin-left: 4%;
+}
+
+.Footer__Block__One__Email__Txt
+{
+    font-family: 'Cantarell';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    color: #030E27;
+}
+
+.Footer__Block__One__Email__Mail
+{
+    margin-top: 10px;
+    font-family: 'Cantarell';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 31px;
+    color: #030E27;
+}
+
+.Footer__Block__One__Email__Mail a
+{
+    text-decoration: none;
+    color: #030E27;
+}
+
+.Footer__Block__BTN__One
+{
+    margin-top: 18px;
+    margin-left: 4%;
+}
+
+.Footer__Block__BTN__One__Bt
+{
+    width: 252px;
+    height: 43px;
+    background: #AFC7FA;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Cantarell';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    color: #030E27;
+}
+
+.Footer__Block__BTN__One__Bt:hover
+{
+    background: #8FAFF7;
+}
+
+.Footer__Block__BTN__Two
+{
+    margin-top: 18px;
+    margin-left: 2%;
+}
+
+.Footer__Block__BTN__Two__Bt
+{
+    width: 101px;
+    height: 43px;
+    background: #FFFFFF;
+    border: 1px solid #030E27;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Cantarell';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    color: #030E27;
+}
+
+.Footer__Block__BTN__Two__Bt:hover
+{
+    background: #8FAFF7;
+}
+
+.Footer__Block__Two
+{
+    margin-left: 7%;
+    width: 90%;
+    margin-top: 50px;
+    border-top-style: solid;
+    border-top-color: #030E27;
+    border-top-width: 1px;
+    display: flex;
+}
+
+.Footer__Block__Two__Txt__One
+{
+    margin-top: 20px;
+    font-family: 'Cantarell';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    color: #030E27;
+}
+
+.Footer__Block__Two__Txt__Two
+{
+    margin-top: 20px;
+    margin-left: 45%;
+    font-family: 'Cantarell';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    color: #030E27;
+}
+
+.Footer__Block__Two__Txt__Two:hover
+{
+    cursor: pointer;
+}
+
+.Footer__Block__Two__Txt__Three
+{
+    margin-left: 7%;
+    margin-top: 20px;
+    font-family: 'Cantarell';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    color: #030E27;
+}
+
+.Footer__Block__Two__Txt__Three:hover
+{
+    cursor: pointer;
+}
